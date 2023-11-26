@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký khách hàng </title>
+</head>
+<style>
+body{
+   
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center
+    
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300&display=swap');
+*{
+   box-sizing: border-box;
+}
+input{
+    height: 30px;
+    padding: 20px;
+    border: 2px solid #ffff;
+    outline: none;
+    border: 1px solid #dadce0;
+    font-size: inherit ;
+    border-radius: 5px;
+    display: flex;
+    font-size: 15px;
+
+}
+form{
+    margin: 0px auto;
+    align-items: center;
+    font-size: 18px;
+    color: cadetblue;
+    background-color: #dadce0;
+   font-style: italic;
+   padding: 150px;
+   border: #ffff;
+   font-weight:normal;
+
+}
+.container{
+    color: black;
+    padding: 10px 0px 0px 60px;
+    justify-content: center; 
+   
+}
+.for-heading{
+    padding: 10px 0px 0px 60px;
+    justify-content: center;
+}
+button{
+    padding:12px 12px 12px 12px;
+    border: 1px solid black;
+    color: black;
+    justify-content: center;
+}
+input[type="checkbox"]{
+width: 30px;
+
+    
+}
+.label{
+    padding: 0px 5px;
+    top :5px;
+    left: 50%;
+    justify-content: center;
+    color: white;
+    padding: 8px ;
+}
+.fist-heading{
+    align-items: center;
+  
+}
+</style>
+<body>
+    <form action="" method="post">
+        <div class="container">
+            <h3>Thông tin đăng nhập </h3>
+        </div>
+       <div class="fist-heading">
+        <label for="">Tên đăng nhập </label>
+        <input type="text"placeholder="nhập tên"name="name"value=""><br>
+        <div class="two-heading"><br>
+        <label for="">Mật khẩu</label>
+        <input type="password"placeholder="password"name="password"value="" id="pwd"><br>
+        <input type="checkbox" id="chk">show password
+        <div class="three-heading"><br>
+        <label for="">Nhập lại mật khẩu </label>
+        <input type="password"placeholder="nhập lại"name="fogot"value="">
+    </div>
+    <div class="for-heading">
+        <h3> Thông tin chi tiết cá nhân</h3>
+    </div>
+    <div class="five-heading">
+       <label for="">Họ và tên khách hàng</label>
+    <input type="text" placeholder="họ và tên " name="fullname"value=""><br>
+    <div><br>
+    <label for="">Ngày sinh</label>
+    <input type="date"name="bday" value=""><br><br>
+    <label for="">Giới tính </label>
+    <input name="gender" type="checkbox" value="nam">nam 
+    <input name="gender" type="checkbox"value ="nữ">nữ
+    <input name="gender"type="checkbox" value="khác">khác<br>
+    </div><br>
+    <div>
+        <label for="">Địa chỉ email</label>
+        <input type="email"name="email" value=""><br>
+        <div><br>
+        <label for="">Thu nhập</label>
+        <input type="text"name="dbformat" value=""><br>
+        <div class="six-heading"><br><br>
+           <button type="submit" name="subit" value="" id="lgt-login">Đăng ký</button>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+        
+       </div>
+       <script>
+        const pwwd = document.getElementById('pwwd');
+const chk = document.getElementById('chk');
+chk.onchange = function (e){
+    pwd.type = chk.checked ? "text" : "password";
+};
+       </script>
+    </form>
+   
+</body>
+</html>
